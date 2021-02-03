@@ -6,6 +6,7 @@ import Auxillary from '../../../hoc/Auxillary'
 
 const modal = (props) => (
     <Auxillary>
+        <Backdrop show={props.show} clicked={props.modalClosed}/>
         <div 
             className={classes.Modal}
             style={{
