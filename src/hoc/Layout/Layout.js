@@ -4,7 +4,7 @@ import Auxillary from '../Auxillary/Auxillary'
 import classes from './Layout.module.css'
 import Toolbar from '../../Components/Navigation/Toolbar/Toolbar'
 import SideDrawer from '../../Components/Navigation/SideDrawer/SideDrawer'
-import { render } from '@testing-library/react'
+
 
 class Layout extends Component {
     state = {
