@@ -23,7 +23,7 @@ class BurgerBuilder extends Component {
     }
 
     updatePurchase(ingredients) {
-        console.log(Object.values(ingredients).some(amount => amount > 0));
+        //console.log(Object.values(ingredients).some(amount => amount > 0));
         return Object.values(ingredients).some(amount => amount > 0)
     }
 
