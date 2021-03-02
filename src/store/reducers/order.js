@@ -1,5 +1,5 @@
 import * as actionTypes from '../actions/actionTypes'
-import {updateObject} from '../utility'
+import {updateObject} from '../../shared/utility'
 
 const initialState = {
     orders: [],
@@ -10,7 +10,7 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch (action.type){
         case actionTypes.PURCHASE_BURGER_START:
-            return updateObject(state, {loading: false})
+            return updateObject(state, {loading: true})
         case actionTypes.PURCHASE_BURGER_SUCCESS:
             const newOrder = updateObject(action.orderData, {id: action.orderId})
             return updateObject(state,{
